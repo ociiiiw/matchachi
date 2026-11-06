@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState, useEffect, useRef } from 'react';
+import ChatWidget from '@/components/ui/chat-widget';
 
 // ─── Inline SVG Icons ─────────────────────────────────────────────────────────
 
@@ -951,16 +952,22 @@ export default function LandingPage() {
       {/* ══════════════════════════════════════════════
           FLOATING WHATSAPP BUTTON
       ══════════════════════════════════════════════ */}
+      {/* Floating WA button — shifted left to not overlap chat widget */}
       <a href="https://wa.me/6281234567890?text=Hii%20MatchaChi!%20Saya%20mau%20order"
         target="_blank" rel="noopener noreferrer"
-        className="fixed bottom-6 right-6 z-50 flex items-center gap-2.5 px-4 py-3 rounded-full font-semibold text-sm text-white shadow-lg transition-transform hover:scale-105 active:scale-95"
+        className="fixed z-50 flex items-center gap-2.5 px-4 py-3 rounded-full font-semibold text-sm text-white shadow-lg transition-transform hover:scale-105 active:scale-95"
         style={{
+          bottom: '24px',
+          right: '96px',
           background: 'linear-gradient(135deg,#4dc496,#25d366)',
           boxShadow: '0 8px 30px -4px rgba(37,211,102,0.50)',
         }}>
         <IconWhatsapp size={20} color="white" />
         <span className="hidden sm:inline">Order Sekarang</span>
       </a>
+
+      {/* AI Chat Widget */}
+      <ChatWidget />
 
     </div>
   );
