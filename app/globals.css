@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --radius: 0.75rem;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Smooth scroll */
+* {
+  scroll-behavior: smooth;
+}
