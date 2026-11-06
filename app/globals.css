@@ -1,18 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,700;1,700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --radius: 0.75rem;
+  --bg: #fffdf7;
+  --sage: #8fbf8f;
+  --blush: #ffcadd;
+  --text: #2d3a2e;
+  --muted: #7a9080;
 }
 
-html,
+html { scroll-behavior: smooth; }
+
 body {
-  margin: 0;
-  padding: 0;
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
-/* Smooth scroll */
-* {
-  scroll-behavior: smooth;
+/* Blob shapes used as decorative backgrounds */
+.blob {
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+}
+
+/* Soft card hover lift */
+.card-lift {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.card-lift:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 48px -8px rgba(143,191,143,0.25);
 }
