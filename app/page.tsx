@@ -929,11 +929,7 @@ export default function LandingPage() {
               <span className="font-bold">Matcha<span style={{ color: '#f54d8a' }}>Chi</span></span>
             </div>
             <p className="text-sm text-center" style={{ color: '#7a9080' }}>
-              © 2026 MatchaChi · Made with{' '}
-              <IconCup size={13} color="#4dc496" style={{ display: 'inline' }} />{' '}
-              and{' '}
-              <IconHeart size={13} color="#f54d8a" style={{ display: 'inline' }} />{' '}
-              in Indonesia
+              © 2026 MatchaChi · Made with 🍵 and 🩷 in Indonesia
             </p>
             <div className="flex gap-3">
               {[
